@@ -34,6 +34,16 @@ const NavigationBar = () => {
         setIsMobileMenuOpen(false);
     };
 
+    const scrollToFooter = () => {
+        const footer = document.querySelector('.footer');
+        if (footer) {
+            footer.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     // Show navigation when hovered OR when not scrolled
     const shouldShowNavigation = !isScrolled || isHovered;
 
@@ -73,7 +83,7 @@ const NavigationBar = () => {
 
                     {/* Desktop Contact Button - hidden when scrolled but show on hover */}
                     <div className={`contact-section desktop-contact ${shouldShowNavigation ? '' : 'hide'}`}>
-                        <button className="contact-btn">
+                        <button className="contact-btn" onClick={scrollToFooter}>
                             Contact
                         </button>
                     </div>
@@ -122,7 +132,10 @@ const NavigationBar = () => {
                         </div>
 
                         <div className="mobile-contact-section">
-                            <button className="mobile-contact-btn">
+                            <button className="mobile-contact-btn" onClick={() => {
+                                scrollToFooter();
+                                closeMobileMenu();
+                            }}>
                                 Contact
                             </button>
                         </div>
