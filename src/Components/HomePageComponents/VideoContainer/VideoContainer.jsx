@@ -62,6 +62,7 @@ const VideoContainer = () => {
                         autoPlay
                         muted={volume === 0}
                         loop
+                        controls={true}
                         onPlay={() => setIsPlaying(true)}
                         onPause={() => setIsPlaying(false)}
                     ></video>

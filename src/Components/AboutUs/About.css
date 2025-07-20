@@ -190,7 +190,7 @@
     .masonry-item:nth-child(3),
     .masonry-item:nth-child(6) {
         grid-row: span 1;
-        height: 120px;
+        /* height: 120px; */
     }
 
     .masonry-item:nth-child(2),

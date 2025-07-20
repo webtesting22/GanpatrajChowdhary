@@ -14,7 +14,7 @@ body {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 50px;
   color: black;
   margin: 0px;
   font-family: 'Manrope', sans-serif;
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   color: black;
   margin: 0px;
   font-family: 'Manrope', sans-serif;
@@ -33,7 +33,7 @@ h3 {
 }
 
 h2 span {
-  color: rgb(150, 150, 150);
+  color: #B18440;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -123,6 +123,10 @@ p {
   transition: .5s;
 }
 
+.TagContainer {
+  font-weight: 600;
+}
+
 .TagContainer a {
   color: black !important;
   text-decoration: none !important;
@@ -130,4 +134,18 @@ p {
 
 a {
   text-decoration: none !important;
+}
+
+
+@media (max-width: 768px) {
+  .paddingTop {
+    padding-top: 60px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .Container {
+    padding: 0px 10px;
+  }
 }

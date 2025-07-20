@@ -64,7 +64,7 @@ const About = () => {
                         <div className='TagContainer'>
                             <Link to="/"> Home</Link> . About
                         </div>
-                        <h2>Leading with Wisdom. <span>Building with Purpose.</span></h2>
+                        <h2>Visionary <span>Entrepreneur, Leader, and Philanthropist</span> Shaping a Sustainable Future</h2>
                     </div>
 
                     <div className="MansoryGridContainer">

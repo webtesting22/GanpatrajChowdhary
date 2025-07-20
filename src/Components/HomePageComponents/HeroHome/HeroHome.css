@@ -1,0 +1,14 @@
+
+.CommonHeader img{
+    position: absolute;
+    right: 50px;
+    width: 400px;
+    opacity: 0.2;
+    bottom: 0px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.MaxContainer{
+    max-width: 1000px;
+}

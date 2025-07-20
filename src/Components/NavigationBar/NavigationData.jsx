@@ -11,7 +11,7 @@ const NavigationData = [
     },
     {
         id: 3,
-        name: "Journey Photos",
+        name: "Milestones & Memories",
         path: "/journey-photos",    
     },
     {

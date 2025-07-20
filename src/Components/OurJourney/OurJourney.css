@@ -130,7 +130,7 @@
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(180deg, #000000, #666666);
+    background: linear-gradient(180deg, #B18440, #b184404d);
     transition: all 0.3s ease;
 }
 
@@ -144,7 +144,7 @@
 .journey-step:hover .step-content::before,
 .journey-step.active .step-content::before {
     width: 6px;
-    background: linear-gradient(180deg, #000000, #333333);
+    background: linear-gradient(180deg, #B18440, #b184404d);
 }
 
 /* Step Icon */
@@ -219,7 +219,7 @@
     background: #ffffff;
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid #000000;
+    border-left: 4px solid #B18440;
     transition: all 0.3s ease;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -312,6 +312,7 @@
 
     .roles-container {
         gap: 15px;
+        flex-direction: column;
     }
 
     .role-item {
