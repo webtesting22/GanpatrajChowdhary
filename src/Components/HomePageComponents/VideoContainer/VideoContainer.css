@@ -1,0 +1,207 @@
+/* Video Container */
+.VideoContainerEdit {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.VideoContainerEdit video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom Video Controls */
+.video-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.video-controls.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.controls-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Control Buttons */
+.control-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(5px);
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.play-btn {
+    background: white;
+    border-color: gray;
+    color: black;
+}
+
+.play-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* Volume Controls */
+.volume-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.volume-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+}
+
+/* Volume Slider */
+.volume-slider-container {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.volume-slider {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.volume-slider::-webkit-slider-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    height: 4px;
+}
+
+.volume-slider::-moz-range-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    height: 4px;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-controls {
+        top: 15px;
+        left: 15px;
+    }
+
+    .controls-left {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .control-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .volume-btn {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-controls {
+        top: 10px;
+        left: 10px;
+    }
+
+    .controls-left {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .control-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .volume-btn {
+        width: 28px;
+        height: 28px;
+    }
+
+    .volume-slider {
+        height: 3px;
+    }
+
+    .volume-slider::-webkit-slider-thumb {
+        width: 14px;
+        height: 14px;
+    }
+
+    .volume-slider::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+    }
+}

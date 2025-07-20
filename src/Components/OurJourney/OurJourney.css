@@ -1,0 +1,328 @@
+/* Journey Container */
+.journey-container {
+    position: relative;
+    min-height: 100vh;
+    background: #f5f5f5;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+/* SVG Background */
+.journey-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+/* Journey Content */
+.journey-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.journey-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+/* Timeline */
+.journey-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Journey Step */
+.journey-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.journey-step:hover {
+    transform: translateX(10px);
+}
+
+.journey-step.active {
+    transform: translateX(15px);
+}
+
+/* Step Connector */
+.step-connector {
+    position: relative;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-line {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.journey-step:last-child .step-line {
+    display: none;
+}
+
+.step-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #000000;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.journey-step:hover .step-dot,
+.journey-step.active .step-dot {
+    background: #000000;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Step Content */
+.step-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #000000, #666666);
+    transition: all 0.3s ease;
+}
+
+.journey-step:hover .step-content,
+.journey-step.active .step-content {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.journey-step:hover .step-content::before,
+.journey-step.active .step-content::before {
+    width: 6px;
+    background: linear-gradient(180deg, #000000, #333333);
+}
+
+/* Step Icon */
+.step-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.journey-step:hover .step-icon {
+    transform: scale(1.1);
+}
+
+/* Step Year */
+.step-year {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+
+/* Progress Bar */
+.journey-progress {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #000000, #666666);
+    border-radius: 2px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-text {
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+
+.roles-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.roles-container {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.role-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #000000;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.role-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.role-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.role-description {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .journey-container {
+        padding: 60px 0;
+    }
+
+    .journey-timeline {
+        gap: 20px;
+    }
+
+    .journey-step {
+        gap: 25px;
+    }
+
+    .step-connector {
+        width: 50px;
+        height: 50px;
+    }
+
+    .step-dot {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+
+    .step-content {
+        padding: 25px;
+    }
+
+    .roles-title {
+        font-size: 2rem;
+    }
+
+    .role-item {
+        padding: 25px;
+    }
+
+    .role-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .journey-content {
+        padding: 0 15px;
+    }
+
+    .journey-step {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .step-connector {
+        align-self: center;
+    }
+
+    .step-line {
+        display: none;
+    }
+
+    .step-content {
+        padding: 20px;
+    }
+
+    .roles-container {
+        gap: 15px;
+    }
+
+    .role-item {
+        padding: 20px;
+    }
+
+    .role-title {
+        font-size: 1.1rem;
+    }
+
+    .role-description {
+        font-size: 0.9rem;
+    }
+}
