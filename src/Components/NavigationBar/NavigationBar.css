@@ -28,6 +28,10 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+.NavigationBarContainer.hovered .profile-section {
+    width: unset !important;
+}
+
 /* Profile Section */
 .profile-section {
     display: flex;

@@ -295,7 +295,7 @@
     .journey-step {
         flex-direction: column;
         gap: 20px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .step-connector {
