@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FiPhone, FiMail, FiMapPin, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
 import './Footer.css';
-
+import NavigationData from "../NavigationBar/NavigationData";
 const Footer = () => {
     return (
         <footer className="footer">
@@ -61,9 +61,16 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4>Quick Links</h4>
                         <div className="footer-links">
-                            <Link to="/" className="footer-link">Home</Link>
-                            <Link to="/about" className="footer-link">About</Link>
-                            <Link to="/journey-photos" className="footer-link">Milestones & Memories</Link>
+                            {NavigationData.map((item) => (
+                                <Link 
+                                    to={item.path} 
+                                    className="footer-link" 
+                                    key={item.id}
+                                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                >
+                                    {item.name}
+                                </Link>
+                            ))}
                         </div>
                     </div>
 
