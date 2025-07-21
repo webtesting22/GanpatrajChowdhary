@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './Components/AboutUs/About'
 import JourneyPhotos from './Components/JourneyPhotos/JourneyPhotos'
 import LatestUpdates from './Components/LatestUpdates/LatestUpdates'
+import Awards from './Components/Awards/Awards'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/journey-photos" element={<JourneyPhotos />} />
           <Route path="/latest-updates" element={<LatestUpdates />} />
+          <Route path="/awards" element={<Awards />} />
         </Routes>
         <Footer />
       </Router>

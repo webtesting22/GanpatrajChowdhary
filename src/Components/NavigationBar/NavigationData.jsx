@@ -19,6 +19,11 @@ const NavigationData = [
         name: "Latest Updates",
         path: "/latest-updates",
     },
+    {
+        id: 5,
+        name: "Awards",
+        path: "/awards",
+    },
 ];
 
 export const profileData = {
