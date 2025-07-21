@@ -14,11 +14,11 @@ const NavigationData = [
         name: "Milestones & Memories",
         path: "/journey-photos",    
     },
-    // {
-    //     id: 4,
-    //     name: "Latest Updates",
-    //     path: "/latest-updates",
-    // },
+    {
+        id: 4,
+        name: "Latest Updates",
+        path: "/latest-updates",
+    },
 ];
 
 export const profileData = {

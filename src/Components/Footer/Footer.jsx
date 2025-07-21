@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <Link to="/">
                                 <img
-                                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatRajLogoUpdated.jpeg"
+                                    src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatRajLogo.png"
                                     alt="Ganpatraj Chowdhary"
                                 />
                             </Link>
