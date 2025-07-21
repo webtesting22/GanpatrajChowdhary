@@ -93,7 +93,7 @@ const Footer = () => {
                 {/* Footer Bottom */}
                 <div className="footer-bottom">
                     <div className="footer-bottom-content">
-                        <p>&copy; 2024 Ganpatraj Chowdhary. All rights reserved.</p>
+                        <p>&copy; 2025 Ganpatraj Chowdhary. All rights reserved.</p>
                         {/* <div className="footer-bottom-links">
                             <Link to="/privacy" className="footer-bottom-link">Privacy Policy</Link>
                             <Link to="/terms" className="footer-bottom-link">Terms of Service</Link>
