@@ -244,9 +244,20 @@
     line-height: 1.5;
     margin: 0;
 }
-
+.PcShowImage{
+    display: block;
+}
+.MobileShowImage{
+    display: none;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
+    .PcShowImage{
+        display: none;
+    }
+    .MobileShowImage{
+        display: block;
+    }
     .journey-container {
         padding: 60px 0;
     }
