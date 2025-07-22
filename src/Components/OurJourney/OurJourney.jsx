@@ -75,68 +75,26 @@ const OurJourney = () => {
     ];
 
     return (
-        <><div className="current-roles-section  marginBottom">
-        <div className="Container">
-            <div className="roles-header">
-                <h2 className="roles-title">Current Roles</h2>
-                <p className="roles-subtitle">Leadership positions across diverse industries</p>
-            </div>
-
-            <div className="roles-container">
-                {currentRoles.map((role, index) => (
-                    <div key={role.id} className="role-item">
-                        <h3>{role.title}</h3>
-                        <div className="role-description">{role.description}</div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    </div>
-            <div className="journey-container paddingTop">
-                <div className="journey-content">
-                    <div className="journey-header">
-                        <h2 className="journey-title">Our Journey</h2>
-                        <p className="journey-subtitle">From humble beginnings to industry leadership</p>
+        <>
+            <div className="current-roles-section  marginBottom">
+                <div className="Container">
+                    <div className="roles-header">
+                        <h2 className="roles-title">Current Roles</h2>
+                        <p className="roles-subtitle">Leadership positions across diverse industries</p>
                     </div>
 
-                    <div className="journey-timeline">
-                        {journeySteps.map((step, index) => (
-                            <div
-                                key={step.id}
-                                className={`journey-step ${index === activeStep ? 'active' : ''}`}
-                                onMouseEnter={() => setActiveStep(index)}
-                            >
-                                <div className="step-connector">
-                                    <div className="step-line"></div>
-                                    <div className="step-dot"></div>
-                                </div>
-
-                                <div className="step-content">
-                                    <div><i>{step.year}</i></div>
-                                    <h3>{step.title}</h3>
-                                    <p>{step.description}</p>
-                                </div>
+                    <div className="roles-container">
+                        {currentRoles.map((role, index) => (
+                            <div key={role.id} className="role-item">
+                                <h3>{role.title}</h3>
+                                <div className="role-description">{role.description}</div>
                             </div>
                         ))}
                     </div>
-
-                    <div className="journey-progress">
-                        <div className="progress-bar">
-                            <div
-                                className="progress-fill"
-                                style={{ width: `${((activeStep + 1) / journeySteps.length) * 100}%` }}
-                            ></div>
-                        </div>
-                        <div className="progress-text">
-                            Step {activeStep + 1} of {journeySteps.length}
-                        </div>
-                    </div>
-
-                    {/* Current Roles Section */}
-
                 </div>
             </div>
-            
+            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatRajJourney.png" alt="" style={{width: "100%", height: "auto"}}/>
+
         </>
     );
 };

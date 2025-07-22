@@ -232,7 +232,7 @@ const JourneyPhotos = () => {
                     <h2>A Legacy in <span>Frames</span></h2>
                     <p>Discover the inspiring milestones and timeless moments from Ganpatraj Chowdhary’s extraordinary journey, captured through a lens.
 
-</p>
+                    </p>
                 </div>
 
                 <div className="gallery-container">

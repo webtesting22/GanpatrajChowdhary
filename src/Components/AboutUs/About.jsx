@@ -67,7 +67,7 @@ const About = () => {
                         <h2>Visionary <span>Entrepreneur, Leader, and Philanthropist</span> Shaping a Sustainable Future</h2>
                     </div>
 
-                    <div className="MansoryGridContainer">
+                    {/* <div className="MansoryGridContainer">
                         {demoImages.map((image) => (
                             <div
                                 key={image.id}
@@ -88,7 +88,7 @@ const About = () => {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
 
                     {/* Full Screen Modal */}
                     {isModalOpen && selectedImage && (
