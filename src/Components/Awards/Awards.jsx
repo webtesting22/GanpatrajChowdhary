@@ -33,9 +33,9 @@ const Awards = () => {
         <div className="AwardsContainer paddingTop marginTop paddingBottom">
             <div className="Container">
                 <div className="CommonHeader">
-                    <div className="TagContainer">
+                    {/* <div className="TagContainer">
                         <a href="/"> Home</a> . Awards
-                    </div>
+                    </div> */}
                     <h2>Recognition & <span>Achievements</span></h2>
                     <p>Celebrating the remarkable achievements and recognition received by Mr. Ganpatraj Chowdhary for his outstanding contributions to entrepreneurship, social service, and community development.</p>
                 </div>

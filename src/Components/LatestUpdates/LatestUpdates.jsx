@@ -146,8 +146,8 @@ const LatestUpdates = () => {
 
                 <div className="updates-grid">
                     {latestUpdates.map((update) => (
-                        <div 
-                            key={update.id} 
+                        <div
+                            key={update.id}
                             className={`update-card ${update.featured ? 'featured' : ''}`}
                             onClick={() => openModal(update)}
                         >
@@ -162,7 +162,7 @@ const LatestUpdates = () => {
                                     <div className="featured-badge">Featured</div>
                                 )}
                             </div>
-                            
+
                             <div className="update-content">
                                 <div className="update-meta">
                                     <span className="category">{update.category}</span>
@@ -173,10 +173,10 @@ const LatestUpdates = () => {
                                         <span>{update.time}</span>
                                     </div>
                                 </div>
-                                
+
                                 <h3 className="update-title">{update.title}</h3>
                                 <p className="update-excerpt">{update.excerpt}</p>
-                                
+
                                 <div className="update-footer">
                                     <div className="read-time">
                                         <span>{update.readTime}</span>
@@ -206,7 +206,7 @@ const LatestUpdates = () => {
                         <button className="modal-close" onClick={closeModal}>
                             <FiX />
                         </button>
-                        
+
                         <div className="modal-header">
                             <div className="modal-meta">
                                 <span className="modal-category">{selectedUpdate.category}</span>
@@ -229,15 +229,15 @@ const LatestUpdates = () => {
                                     </video>
                                 </div>
                             )}
-                            
+
                             <div className="modal-image">
                                 <img src={selectedUpdate.image} alt={selectedUpdate.title} />
                             </div>
-                            
+
                             <div className="modal-text">
                                 <p>{selectedUpdate.content}</p>
                             </div>
-                            
+
                             <div className="modal-tags">
                                 {selectedUpdate.tags.map((tag, index) => (
                                     <span key={index} className="tag">{tag}</span>
