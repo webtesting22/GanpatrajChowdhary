@@ -71,7 +71,7 @@
     border: 2px solid transparent;
 }
 
-.organization-card::before {
+/* .organization-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -81,12 +81,12 @@
     background: linear-gradient(90deg, #B18440, #8B6B2E, #D4A574);
     transform: scaleX(0);
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+} */
 
 .organization-card:hover {
     transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(177, 132, 64, 0.25);
-    border-color: #B18440;
+    /* box-shadow: 0 20px 60px rgba(177, 132, 64, 0.25); */
+    /* border-color: #B18440; */
 }
 
 .organization-card:hover::before {
@@ -107,10 +107,11 @@
     object-fit: contain;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     filter: grayscale(30%);
+    filter: grayscale(0%) brightness(1.1);
 }
 
 .organization-card:hover .organization-logo {
-    transform: scale(1.15) rotate(2deg);
+    /* transform: scale(1.15) rotate(2deg); */
     filter: grayscale(0%) brightness(1.1);
 }
 
