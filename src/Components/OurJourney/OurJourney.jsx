@@ -93,8 +93,8 @@ const OurJourney = () => {
                     </div>
                 </div>
             </div>
-            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatrajMobileTineline.png" alt="" className="MobileShowImage" style={{ width: "100%", height: "auto" }}/>
-            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatRajJourney.png" alt="" style={{ width: "100%", height: "auto" }} className="PcShowImage"/>
+            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatrajMobileTineline.png" alt="" className="MobileShowImage" style={{ width: "100%", height: "auto" }} />
+            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatRajJourney.png" alt="" style={{ width: "100%", height: "auto" }} className="PcShowImage" />
 
         </>
     );

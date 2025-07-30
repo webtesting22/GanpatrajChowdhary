@@ -28,6 +28,10 @@
     border-bottom: 2px solid #000;
 }
 
+.custom-tabs .ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: black !important;
+}
+
 .custom-tabs .ant-tabs-ink-bar {
     display: none;
 }
