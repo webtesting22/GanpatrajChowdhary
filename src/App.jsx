@@ -8,7 +8,7 @@ import About from './Components/AboutUs/About'
 import JourneyPhotos from './Components/JourneyPhotos/JourneyPhotos'
 import LatestUpdates from './Components/LatestUpdates/LatestUpdates'
 import Awards from './Components/Awards/Awards'
-
+import WhatsappBtn from './Components/WhatsappBtn/WhatsappBtn'
 function App() {
 
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="/latest-updates" element={<LatestUpdates />} />
           <Route path="/awards" element={<Awards />} />
         </Routes>
+        <WhatsappBtn />
         <Footer />
       </Router>
     </>

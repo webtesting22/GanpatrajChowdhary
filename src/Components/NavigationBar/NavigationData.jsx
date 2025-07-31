@@ -1,23 +1,24 @@
 const NavigationData = [
+    // {
+    //     id: 1,
+    //     name: "Home",
+    //     path: "/",
+    // },
+
     {
-        id: 1,
-        name: "Home",
-        path: "/",
+        id: 3,
+        name: "Milestones & Memories",
+        path: "/journey-photos",
+    },
+    {
+        id: 4,
+        name: "Updates",
+        path: "/latest-updates",
     },
     {
         id: 2,
         name: "About",
-        path: "/about", 
-    },
-    {
-        id: 3,
-        name: "Milestones & Memories",
-        path: "/journey-photos",    
-    },
-    {
-        id: 4,
-        name: "Latest Updates",
-        path: "/latest-updates",
+        path: "/about",
     },
     // {
     //     id: 5,

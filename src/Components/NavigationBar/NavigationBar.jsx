@@ -37,7 +37,7 @@ const NavigationBar = () => {
     const scrollToFooter = () => {
         const footer = document.querySelector('.footer');
         if (footer) {
-            footer.scrollIntoView({ 
+            footer.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -83,9 +83,11 @@ const NavigationBar = () => {
 
                     {/* Desktop Contact Button - hidden when scrolled but show on hover */}
                     <div className={`contact-section desktop-contact ${shouldShowNavigation ? '' : 'hide'}`}>
-                        <button className="contact-btn" onClick={scrollToFooter}>
-                            Contact
-                        </button>
+                        <Link to="tel:98989 20679">
+                            <button className="contact-btn">
+                                Contact
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -103,7 +105,7 @@ const NavigationBar = () => {
                     <div className="mobile-menu-content" onClick={(e) => e.stopPropagation()}>
                         <div className="mobile-menu-header">
                             <div className="mobile-profile-section">
-                            <Link to="/">  <div className="mobile-profile-image">
+                                <Link to="/">  <div className="mobile-profile-image">
                                     <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/GanpatRajLogoUpdated.jpeg" alt={profileData.name} />
                                 </div>
                                 </Link>
@@ -132,12 +134,12 @@ const NavigationBar = () => {
                         </div>
 
                         <div className="mobile-contact-section">
-                            <button className="mobile-contact-btn" onClick={() => {
+                            <Link to="tel:98989 20679"> <button className="mobile-contact-btn" onClick={() => {
                                 scrollToFooter();
                                 closeMobileMenu();
                             }}>
                                 Contact
-                            </button>
+                            </button></Link>
                         </div>
                     </div>
                 </div>

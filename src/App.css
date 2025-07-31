@@ -136,12 +136,13 @@ a {
   text-decoration: none !important;
 }
 
-Button{
+Button {
   background-color: #B18440 !important;
   border: none !important;
   color: white;
 }
-Button:hover{
+
+Button:hover {
   background-color: #B18440 !important;
 }
 
@@ -151,11 +152,19 @@ Button:hover{
   .paddingTop {
     padding-top: 60px;
   }
+
   h2 {
     font-size: 30px;
     line-height: 40px;
   }
+
   .Container {
     padding: 0px 10px;
+  }
+}
+
+@media (min-width:1500px) and (max-width:2000px) {
+  .Container {
+    max-width: 1500px;
   }
 }
