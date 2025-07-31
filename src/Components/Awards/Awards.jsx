@@ -51,9 +51,9 @@ const Awards = () => {
                                 <h3 className="award-title">{award.award}</h3>
                                 <p className="award-presenter">Presented by {award.presentedBy}</p>
                             </div>
-                            <div className="award-overlay">
+                            {/* <div className="award-overlay">
                                 <span>View Details</span>
-                            </div>
+                            </div> */}
                         </div>
                     ))}
                 </div>

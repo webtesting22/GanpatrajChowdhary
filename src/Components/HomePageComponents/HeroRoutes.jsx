@@ -10,8 +10,8 @@ const HeroRoutes = () => {
         <>
             <HeroHome />
             <VideoContainer />
-            <Awards/>
-            <OrganizationsLogo/>
+            <Awards />
+            <OrganizationsLogo />
             {/* <QuoteGenerator/> */}
         </>
     );
