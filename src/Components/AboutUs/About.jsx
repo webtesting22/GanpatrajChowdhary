@@ -61,9 +61,9 @@ const About = () => {
             <div className="paddingTop marginTop marginBottom">
                 <div className="Container">
                     <div className='CommonHeader'>
-                        <div className='TagContainer'>
+                        {/* <div className='TagContainer'>
                             <Link to="/"> Home</Link> . About
-                        </div>
+                        </div> */}
                         <h2>Visionary <span>Entrepreneur, Leader, and Philanthropist</span> Shaping a Sustainable Future</h2>
                     </div>
 
@@ -102,7 +102,7 @@ const About = () => {
                                     alt={selectedImage.alt}
                                     className="modal-image"
                                 />
-                             
+
                             </div>
                         </div>
                     )}

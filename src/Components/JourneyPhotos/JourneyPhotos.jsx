@@ -12,7 +12,7 @@ const JourneyPhotos = () => {
     const observerRef = useRef(null);
     const imageRefs = useRef({});
 
-    const imagesPerPage = 40; // Load 20 images at a time
+    const imagesPerPage = 42; // Load 20 images at a time
 
     // Calculate which images to display based on current page
     useEffect(() => {
@@ -80,6 +80,8 @@ const JourneyPhotos = () => {
         setTimeout(() => {
             setCurrentPage(prev => prev + 1);
             setLoading(false);
+            // Scroll to top when loading more images
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }, 500);
     };
 
@@ -89,6 +91,7 @@ const JourneyPhotos = () => {
             setTimeout(() => {
                 setCurrentPage(prev => prev - 1);
                 setLoading(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }, 500);
         }
     };
@@ -139,9 +142,9 @@ const JourneyPhotos = () => {
         <div className="paddingTop marginTop marginBottom">
             <div className="Container">
                 <div className='CommonHeader'>
-                    <div className='TagContainer'>
+                    {/* <div className='TagContainer'>
                         <Link to="/"> Home</Link> . Journey Photos
-                    </div>
+                    </div> */}
                     <h2>Journey <span>Photos</span> </h2>
                 </div>
                 <br /><br />
@@ -173,7 +176,7 @@ const JourneyPhotos = () => {
                                 loading={loading}
                                 className="pagination-btn"
                             >
-                                Load More
+                                Next
                             </Button>
                         )}
                     </div>

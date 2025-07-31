@@ -79,7 +79,7 @@ const OurJourney = () => {
             <div className="current-roles-section  marginBottom">
                 <div className="Container">
                     <div className="roles-header">
-                        <h2 className="roles-title">Current Roles</h2>
+                        <h2 className="roles-title" style={{ color: "#B18440" }}>Current Roles</h2>
                         <p className="roles-subtitle">Leadership positions across diverse industries</p>
                     </div>
 
