@@ -12,7 +12,7 @@ const HeroRoutes = () => {
             <VideoContainer />
             <Awards/>
             <OrganizationsLogo/>
-            <QuoteGenerator/>
+            {/* <QuoteGenerator/> */}
         </>
     );
 };

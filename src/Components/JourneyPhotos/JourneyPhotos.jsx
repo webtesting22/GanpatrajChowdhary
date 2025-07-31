@@ -12,7 +12,7 @@ const JourneyPhotos = () => {
     const observerRef = useRef(null);
     const imageRefs = useRef({});
 
-    const imagesPerPage = 20; // Load 20 images at a time
+    const imagesPerPage = 40; // Load 20 images at a time
 
     // Calculate which images to display based on current page
     useEffect(() => {
@@ -20,7 +20,7 @@ const JourneyPhotos = () => {
         const endIndex = startIndex + imagesPerPage;
         const newDisplayedImages = ImagesData.slice(startIndex, endIndex);
         setDisplayedImages(newDisplayedImages);
-        
+
         // Mark first few images as visible immediately for better UX
         const initialVisibleIds = newDisplayedImages.slice(0, 8).map(img => img.id);
         setVisibleImages(initialVisibleIds);
