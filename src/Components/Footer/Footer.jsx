@@ -39,13 +39,13 @@ const Footer = () => {
                                 </div>
                             </div>
 
-                            <div className="contact-item">
+                            {/* <div className="contact-item">
                                 <FiMail className="contact-icon" />
                                 <div>
                                     <span className="contact-label">Email</span>
                                     <span className="contact-value">info@Test.com</span>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="contact-item">
                                 <FiMapPin className="contact-icon" />
